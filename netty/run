@@ -1,0 +1,2 @@
+#!/bin/sh
+java -Xmx25m -jar dist/io_benchmarks_netty.jar

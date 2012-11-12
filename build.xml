@@ -1,0 +1,15 @@
+<project name="io_benchmarks" default="all" basedir=".">
+    <target name="all" depends="oio,netty" />
+
+    <target name="oio">
+        <ant dir="oio" />
+    </target>
+
+    <target name="netty">
+        <ant dir="netty" />
+    </target>
+
+    <target name="vertx">
+        <ant dir="vertx" />
+    </target>
+</project>

@@ -1,0 +1,3 @@
+#!/bin/sh
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+java -Xmx25m -jar $DIR/dist/io_benchmarks_oio.jar

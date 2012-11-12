@@ -1,0 +1,11 @@
+.DS_Store
+*.bin
+/vertx/nbproject/private/
+/vertx/dist/
+/vertx/build/
+/netty/nbproject/private/
+/netty/dist/
+/netty/build/
+/oio/nbproject/private/
+/oio/build/
+/oio/dist/

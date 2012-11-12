@@ -1,0 +1,3 @@
+#!/bin/sh
+export VERTX_OPTS="-Xmx25m"
+vertx run io_benchmarks_vertx.Main -cp 'dist/io_benchmarks_vertx.jar'

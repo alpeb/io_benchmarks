@@ -1,0 +1,20 @@
+#!/bin/sh
+if [ $# -ne 2 ] ; then
+    echo "Usage: $0 file concurrency"
+    exit 1
+fi
+
+md5=$(which md5)
+if [ ! "${md5}" ] ; then
+  md5=$(which md5sum)
+  if [ ! "${md5}" ] ; then
+    echo "neither md5 nor md5sum found"
+    exit 1
+  else
+    hash=`md5sum ${1} | awk '{ print $1 }'`
+  fi
+else
+  hash=`$md5 -q $1`
+fi
+
+ab -c $2 -t 60 -p $1 http://localhost:8080/${hash}
