@@ -45,7 +45,6 @@ How to run the tests
 cd oio
 ./run
 ```
-
 2. Run the ```clients``` script. ```file``` denotes the file being posted, ```n``` denotes the concurrency level. This will run for 60 seconds:
 
 ```
