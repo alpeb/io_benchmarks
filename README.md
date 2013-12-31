@@ -4,7 +4,7 @@ Benchmarking file uploading to a web server
 For few concurrent users uploading files, it's clear the bottleneck is IO; the server's NIC bandwidth is distributed among the users bandwidth set by their ISPs.
 For lots of concurrent users, synchronization, context switching and event handling start coming into play, so that IO stops being the bottleneck and the full server bandwidth is no longer available to its users.
 
-* This non statistically-correct micro benchmark is an attempt to determine at what concurrency level this starts to happen *
+*This non statistically-correct micro benchmark is an attempt to determine at what concurrency level this starts to happen*
 
 The tests consists on concurrently uploading a file through POST requests using Apache Bench.
 The server-side program being benchmarked pipes the bytes received into a class that progressively computes the file's MD5 in order to verify the upload.
