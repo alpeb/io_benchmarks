@@ -39,8 +39,12 @@ Just run "ant".
 How to run the tests
 --------------------
 
-1. Launch the server-side program. Replace oio with netty or vertx to test the other methods.
-    cd oio
-    ./run
-2. Run the clients script. "file" denotes the file being posted, "n" the concurrency level. This will run for 60 seconds:
-    ./clients file n
+1. Launch the server-side program. Replace ```oio``` with ```netty``` or ```vertx``` to test the other methods.
+```
+cd oio
+./run
+```
+2. Run the clients script. ```file``` denotes the file being posted, ```n``` denotes the concurrency level. This will run for 60 seconds:
+```
+./clients file n
+```
